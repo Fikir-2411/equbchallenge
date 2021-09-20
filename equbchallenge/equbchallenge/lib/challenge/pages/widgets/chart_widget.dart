@@ -17,7 +17,7 @@ class Entry {
   final Widget widget;
 }
 
-Entry data = Entry('Hi alem', const Charts());
+Entry data = Entry('Hi, Alem have ETB 40,000 debt', const Charts());
 
 class EntryItem extends StatelessWidget {
   const EntryItem(this.entry);
