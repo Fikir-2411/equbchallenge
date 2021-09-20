@@ -46,21 +46,29 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        leading: CircleAvatar(radius: 10, backgroundColor: Colors.black),
-        actions: const [
-          Icon(
-            Icons.bookmark_outline,
-            color: Colors.grey,
-          )
-        ],
-      ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: 30,
+                    width: 30,
+                    decoration: BoxDecoration(
+                        color: Colors.black, shape: BoxShape.circle),
+                  ),
+                  Icon(
+                    Icons.bookmark_outline,
+                    color: Colors.grey,
+                  )
+                ],
+              ),
+            ),
             const ExpansionWidget(),
             const Padding(
               padding: EdgeInsets.all(15),
